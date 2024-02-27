@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #fff; /* fallback for old browsers */
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+i {
+  margin-right: 10px;
+}
+.navbar-logo {
+  padding: 15px;
+  color: #fff;
+  pointer-events: none;
+}
+
+.title {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 0.4%;
+    margin-left: 3%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    border-radius: 3px;
+    padding: 3px;
+  }
+  
+  .titlenavlink {
+    display: inline-block;
+    letter-spacing: 1.5px;
+    font-size: 2rem; /* Adjust the font size as needed */
+    font-weight: 1000; /* Adjust the font weight as needed */
+    color: #ffffff; /* Set the text color */
+    text-decoration: none;
+    background: linear-gradient(to right, #6574cd, #9561e2, #f66d9b); /* Set the background gradient */
+    padding: 0.25rem 0.5rem; /* Adjust the padding as needed */
+    border-radius: 0.25rem; /* Adjust the border radius as needed */
+  }
+
+.navbar-mainbg {
+  justify-content: end;
+  background-color: #000000;
+  padding: 0px;
+}
+#navbarSupportedContent {
+  overflow: hidden;
+  position: relative;
+}
+#navbarSupportedContent ul {
+  padding: 0px;
+  margin: 0px;
+  margin-left: 50%;
+}
+
+#navbarSupportedContent li {
+  list-style-type: none;
+  float: left;
+}
+#navbarSupportedContent ul li a {
+    gap: 10px;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 20px;
+  transition-duration: 0.6s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  position: relative;
+}
+#navbarSupportedContent > ul > li.active > a {
+  color: #000000;
+  background-color: transparent;
+  transition: all 0.7s;
+}
+/* #navbarSupportedContent a:not(:only-child):after {
+    display: inline;
+  content: '\f105';
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  font-size: 14px;
+  font-family: 'Font Awesome 5 Free';
+  display: inline-block;
+  padding-right: 3px;
+  vertical-align: middle;
+  font-weight: 900;
+  transition: 0.5s;
+} */
+#navbarSupportedContent .active > Link:not(:only-child):after {
+  transform: rotate(90deg);
+}
+
+.hori-selector {
+  display: inline-block;
+  position: absolute;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  transition-duration: 0.6s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  background-color: #fff;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-top: 10px;
+}
+.hori-selector .right,
+.hori-selector .left {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  bottom: 10px;
+}
+.hori-selector .right {
+  right: -25px;
+}
+.hori-selector .left {
+  left: -25px;
+}
+.hori-selector .right:before,
+.hori-selector .left:before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #000000;
+}
+.hori-selector .right:before {
+  bottom: 0;
+  right: -25px;
+}
+.hori-selector .left:before {
+  bottom: 0;
+  left: -25px;
+}
+
+
+/* For the toggle bar */
+  
+  .navbar-toggler {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    margin-left: 20px;
+    align-items: end;
+  }
+  
+  .navbar-toggler:focus {
+    outline: none;
+  }
+  
+  .toggle-icon {
+    font-size: 30px; /* Adjust the font size as needed */
+  }
+  
+
+  
+  /* media query */
+@media (max-width: 991px) {
+
+    .title{
+        font-size: 20px;
+        margin-bottom: 10%;
+        margin-top: 5%;
+    }
+  #navbarSupportedContent ul li Link {
+    margin-top: 3%;
+    padding: 2px 0px;
+
+  }
+  #navbarSupportedContent li.active{
+    width: 100%;
+  }
+  .hori-selector {
+    margin-top: 0px;
+    margin-left: 0px;
+    border-radius: 0;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+  }
+  .hori-selector .left,
+  .hori-selector .right {
+    right: 0px;
+  }
+  .hori-selector .left {
+    top: -25px;
+    left: auto;
+  }
+  .hori-selector .right {
+    bottom: -25px;
+  }
+  .hori-selector .left:before {
+    left: -25px;
+    top: -25px;
+  }
+  .hori-selector .right:before {
+    bottom: -25px;
+    left: -25px;
+  }
+}
