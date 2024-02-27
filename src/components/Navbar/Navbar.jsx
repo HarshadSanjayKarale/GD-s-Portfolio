@@ -79,9 +79,6 @@ const Navbar = () => {
           item.removeEventListener("click", handleItemClick);
         });
       window.removeEventListener("resize", () => {
-        // This cleanup function may not work as intended because
-        // it creates a new function every time. You might need to
-        // refactor how resize events are cleaned up.
       });
     };
   }, []);
@@ -152,7 +149,6 @@ const Navbar = () => {
             <FaCopy /> Contact Us
             </Link>
           </li>
-
         </ul>
       </div>
     </nav>

@@ -1,0 +1,88 @@
+/* Footer container */
+.footer {
+    padding: 24px 30px;
+    
+    background-color: #030304;
+    color: #fffbfb;
+
+  }
+
+  .footer1{
+    margin-bottom: 2%;
+  }
+
+  .title {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 0.4%;
+    margin-left: 3%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    border-radius: 3px;
+    padding: 3px;
+  }
+  
+  .titlenavlink {
+    display: inline-block;
+    letter-spacing: 1.5px;
+    font-size: 2rem; /* Adjust the font size as needed */
+    font-weight: 1000; /* Adjust the font weight as needed */
+    color: #ffffff; /* Set the text color */
+    text-decoration: none;
+    background: linear-gradient(to right, #6574cd, #9561e2, #f66d9b); /* Set the background gradient */
+    padding: 0.25rem 0.5rem; /* Adjust the padding as needed */
+    border-radius: 0.25rem; /* Adjust the border radius as needed */
+  }
+  
+  /* Footer grid */
+  .footer .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  /* Footer column */
+  .footer .column {
+    margin-bottom: 50px;
+  }
+  
+  /* Footer title */
+  .footer .title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  
+  /* Footer link */
+  .footer a {
+    color: #fffcfc;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+
+  .footer2{
+    margin-top: 1%;
+  }
+  
+  /* Footer social icons */
+  .footer .social-icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 26px;
+  }
+  
+  .footer .social-icons a {
+    color: #ffffff;
+    font-size: 2rem;
+  }
+  
+  .footer .social-icons a:hover {
+    color: #666;
+  }
+  

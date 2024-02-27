@@ -6,6 +6,7 @@ import Youtube from './pages/Youtube';
 import Teaching from './pages/Teaching';
 import Gallary from './pages/Gallary';
 import Contact from './pages/Contact';
+import FooterCom from './components/Footer/Footer';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/gallary" element={<Gallary/>} />
           <Route path="/contact" element={<Contact/>} />
         </Routes>
+        <FooterCom/>
     </Router>
   );
 }
